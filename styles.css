@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+}
+
+input#userInput {
+    width: 60%;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    visibility: hidden;
+}
+
+.card img {
+    max-height: 50vh;
+    width: auto;
+    object-fit: contain;
+}
+
+#fortuneMessage {
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
