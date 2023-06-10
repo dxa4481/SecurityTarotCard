@@ -57,7 +57,7 @@ function hashCode(str) {
 
 function drawCard() {
     let userInput = document.getElementById('userInput');
-    let url = userInput.value;
+    let url = userInput.value.toLowerCase();
 
     if (url === '' || !url.startsWith('http://') && !url.startsWith('https://')) {
         alert('Please input a valid URL starting with "http".');
