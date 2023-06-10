@@ -66,7 +66,8 @@ function drawCard() {
 
     if (cardCount >= 2) {
         let breachIndex = hashCode(url) % breachReasons.length;
-        document.getElementById('fortuneMessage').textContent = "The reason for this website getting breached: " + breachReasons[breachIndex];
+        fortuneMessage.textContent = "The reason for this website getting breached: " + breachReasons[breachIndex];
+        fortuneMessage.classList.add("fade-in-text");
     }
 
     let hashIndex = hashCode(url) % tarotDeck.length;
